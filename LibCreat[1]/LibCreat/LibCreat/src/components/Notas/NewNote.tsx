@@ -3,6 +3,8 @@ import { X } from 'lucide-react'
 import { ChangeEvent, FormEvent, useState } from 'react'
 import { toast } from 'sonner'
 
+import styles from "../../style.module.css";
+
 export function NewNote() {
 
 
@@ -30,13 +32,13 @@ export function NewNote() {
 
   return (
     <Dialog.Root>
-      <Dialog.Trigger className="rounded-md bg-slate-600 p-5 overflow-hidden relative flex flex-col gap-3 text-left hover:ring-2 hover:ring-slate-600">
+      <Dialog.Trigger className={styles.novaPublicacaoDoPerfil}>
 
-        <span className="text-sm font-medium text-slate-200">Adicionar Ideia</span>
-        <p className="text-sm leading-6 text-slate-400">Publique uma ideia...</p>
+        Adicionar uma nova ideia...
 
       </Dialog.Trigger>
       <Dialog.Portal>
+        {/*
         <Dialog.Overlay className="inset-0 fixed bg-black/50">
           <Dialog.Content className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[640px] w-full h-[60vh] bg-slate-700 rounded-md flex flex-col">
 
@@ -70,6 +72,7 @@ export function NewNote() {
 
           </Dialog.Content>
         </Dialog.Overlay>
+        */}
       </Dialog.Portal>
 
     </Dialog.Root>

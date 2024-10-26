@@ -1,0 +1,543 @@
+
+/*
+---------------------------------
+ESTILOS DA TELA DE SINGIN E LOGIN
+---------------------------------
+*/
+
+
+
+.telaDeValidacao{
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #051827;
+    color:white;
+
+}
+
+.cadastrar{
+
+    background-color: #F27C27;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.logar{
+
+    background-color: #16D562;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.intro {
+
+    font-size: 4vw;
+    text-align: center;
+    width: 50vw;
+
+}
+
+.tituloDeValidacao{
+
+    color: white;
+    font-size: 3vw;
+    text-wrap: wrap;
+    width: 40vw;
+    text-align: center;
+    padding: 3vw;
+
+}
+
+.formDeValidacao {
+
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.campoDeValidacao {
+
+    width: max-content;
+    height: 5vh;
+    border: 1px solid black;
+    border-radius: 100px;
+    background-color: whitesmoke;
+    margin-left: 10px;
+
+}
+
+.areaDeValidacao {
+
+    color: black;
+    border: 1px solid black;
+    border-radius: 100px;
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.botaoDeCadastrar {
+
+    background-color: #051827;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 5vw;
+    font-size: larger;
+    margin:1vw;
+
+}
+
+.botaoDeLogar {
+
+    background-color: #051827;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 5vw;
+    font-size: larger;
+    margin:1vw;
+
+}
+
+.botaoDeJaTenhoUmaConta {
+
+    background-color: #173F5F;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 5vw;
+    font-size: larger;
+    margin:1vw;
+
+}
+
+.botaoDeCriarUmaNovaConta {
+
+    background-color: #173F5F;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 5vw;
+    font-size: larger;
+    margin:1vw;
+
+}
+
+
+
+/*
+------------------
+ESTILOS DA FOR YOU
+------------------
+*/
+
+
+
+.forYou {
+
+    padding-top: 7vw;
+    background-color: #173F5F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.publicacao {
+
+    width: 75vw;
+    height: max-content;
+    background-color: #3C6D94;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color:white;
+    padding:1vw;
+    margin: 1vw;
+
+}
+
+.publicacao:hover {
+
+    border:1px solid white;
+
+}
+
+.zoomDaPublicacao {
+
+    width: 75vw;
+    height: max-content;
+    background-color: #3C6D94;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color:white;
+    padding:1vw;
+    margin: 1vw;
+
+}
+
+.perfilDaPublicacaoDaForYou {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 7vw;
+    align-items: start;
+
+}
+
+.fotoDeUsuarioDaForYou {
+
+    width: 7vw;
+    height: 7vw;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/6131/6131849.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.fotoDeUsuarioDaForYou:hover {
+
+    background-color: #F27C27;
+    border-radius: 100%;
+
+}
+
+.nomeDeUsuarioDaForYou {
+
+    font-size: 2vw;
+    color:white;
+
+}
+
+.nomeDeUsuarioDaForYou:hover {
+
+    color: #F27C27;
+
+}
+
+.nicknameNaForYou {
+
+    font-size: 1vw;
+    color:lightgray;
+
+}
+
+.nicknameNaForYou:hover {
+
+    font-size: 1vw;
+    color:#F27C27;
+
+}
+
+.conteudo {
+
+    text-align: start;
+    margin: 1vw;
+
+}
+
+.tituloDaMensagem {
+
+    font-size: 3vw;
+    color:white;
+
+}
+
+.areaDasTagsDaForYou {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 30vw;
+    height: max-content;
+
+}
+
+.tagsDaMensagem {
+
+    font-size: 1.5vw;
+    color:whitesmoke;
+
+}
+
+.textoDaMensagem {
+
+    font-size: 1.5vw;
+    color:white;
+
+}
+
+
+
+/*
+--------------------------
+Estilos da tela de usuário
+--------------------------
+*/
+
+
+
+.cabecalhoDeUsuario {
+
+    padding-top: 7vw;
+    width:100%;
+    height: 22vw;
+    background-color: #CB3434D9;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-content: start;
+    justify-content: center;
+
+}
+
+.fotoDeUsuarioDoPerfil {
+
+    width: 15vw;
+    height: 15vw;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/6131/6131849.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.nomeDeUsuarioDoPerfil {
+
+    font-size: 4vw;
+    color:white;
+
+}
+
+.nicknameDoPerfil {
+
+    font-size: 2.5vw;
+    color: lightgray;
+
+}
+
+.seguidoresDoPerfil {
+
+    font-size: 2vw;
+    color: white;
+
+}
+
+.areaDaBioDoPerfil {
+
+    width: 66vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+
+}
+
+.textoDaBioDoPerfil {
+
+    font-size:2vw;
+    color: white;
+    text-align: right;
+
+}
+
+.areaDasPublicacoesDoPerfil {
+
+    
+    width: 100%;
+    height: max-content;
+    background-color: #3C6D94;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.novaPublicacaoDoPerfil{
+    
+    width: 30vw;
+    background-color: #3C6D94;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    padding:1vw;
+    margin: 1vw;
+
+    font-size: 3vw;
+
+
+    border: 1px solid red;
+
+}
+
+.zoomDePublicarIdeia {
+
+    width:50vw;
+    height: max-content;
+    border: 1px solid red;
+
+}
+
+.publicacaoDoPerfil {
+
+    width: 30vw;
+    background-color: #3C6D94;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color:white;
+    padding:1vw;
+    margin: 1vw;
+
+    border: 1px solid red;
+
+}
+
+.areaDasTagsDoPerfil {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 25vw;
+    height: max-content;
+
+}
+
+.nomeDeUsuarioDoZoomDaMensagemDoPerfil {
+
+    color:white;
+    font-size: 2vw;
+    margin-bottom:-5px;
+
+}
+
+.nicknameDeUsuarioDoZoomDaMensagemDoPerfil {
+
+    color:white;
+    font-size: 1.5vw;
+    margin-bottom:-5px;
+
+}
+
+.dataDaPublicacaoDoZoomDoPerfil {
+
+    color:white;
+    font-size: 2;
+
+}
+
+
+
+/*
+------------------------------------
+ESTILOS DA ABA DE NAVEGAÇÃO SUPERIOR
+------------------------------------
+*/
+
+
+
+.abaDeNavegacao {
+
+    width: 100%;
+    display: flex;
+    position:fixed;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-evenly;
+    margin-top: 1vw;
+    background-color: aqua;
+    border-radius: 10vw 3vw;
+    padding: 0.5vw;
+
+}
+
+.botaoDaNavegacaoParaForYou {
+
+    height: 5vw;
+    width: 5vw;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/25/25694.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+
+}
+
+.botaoDaNavegacaoParaPerfil {
+
+    height: 5vw;
+    width: 5vw;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/6131/6131849.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+
+}
+
+.botaoDaNavegacaoParaNotificacoes {
+
+    height: 5vw;
+    width: 5vw;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1157/1157051.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+
+}
+
+.botaoDaNavegacaoParaLogin {
+
+    height: 5vw;
+    width: 5vw;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1617/1617409.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+
+}

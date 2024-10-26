@@ -1,14 +1,13 @@
-import './index.css';
-import Menu from './components/Menu/index.tsx';
-import RoutesMain from './routes/RoutesMain.tsx';
+import { ApiProvider } from './APIContext/PageContext';
+import RoutesMain from './routes/RoutesMain';
+
 function App() {
 
   return (
     <>
-
-        <Menu />
+      <ApiProvider>
         <RoutesMain />
-
+      </ApiProvider>
     </>
 
   )
