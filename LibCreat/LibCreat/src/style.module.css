@@ -541,3 +541,118 @@ ESTILOS DA ABA DE NAVEGAÇÃO SUPERIOR
     border-radius: 100%;
 
 }
+
+
+
+/*
+------------------
+TELA DE NOVA IDEIA
+------------------
+*/
+
+.telaDaNovaIdeia {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    align-self: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.areaDaNovaIdeia {
+
+    width: 75vw;
+    height: 75vh;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: start;
+    align-self: center;
+    border: 5px solid #3C6D94;
+    background-color: #173F5F;
+    border-radius: 5vw;
+
+}
+
+.tituloDaNovaIdeia {
+
+    font-size: 5vw;
+
+}
+
+.inputDoTituloDaNovaIdeia {
+
+    width: 100%;
+    height: 3vw;
+    border: 3px solid #3C6D94;
+    border-radius: 3vw;
+    text-wrap: wrap;
+    font-size: 2vw;
+
+}
+
+.conteudoDaNovaIdeia {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
+}
+
+.descricaoDaNovaIdeia {
+
+    font-size: 3vw;
+
+}
+
+.inputDaDescricaoDaNovaIdeia {
+
+    width: 50%;
+    height: 100%;
+    border: 3px solid #3C6D94;
+    border-radius: 5vw;
+    text-wrap: wrap;
+    font-size: 1.5vw;
+
+}
+
+.inserirImagemDaNovaIdeia {
+
+    width: 50%;
+    height: 100%;
+    background-color: rgb(150, 150, 255);
+    border: 3px solid#3C6D94;
+    border-radius: 5vw;
+    text-align: center;
+    text-justify:distribute;
+
+}
+
+.areaDoPostarIdeia {
+
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.botaoDoPostarIdeia {
+
+    width: max-content;
+    height: max-content;
+    padding: 1vw;
+    border: 5px solid#3C6D94;
+    border-radius: 5vw;
+    background-color: rgb(175, 175, 255);
+
+}

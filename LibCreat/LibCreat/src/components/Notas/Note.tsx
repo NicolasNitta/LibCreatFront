@@ -6,13 +6,15 @@ import styles from "../../style.module.css";
 
 interface NoteCardProps {
     note: {
+        userName: String;
+        nick: String;
         date: Date;
+        title: String;
         content: String;
     }
-    tags: string[];
 }
 
-export function Note({ note, tags }: NoteCardProps) {
+export function Note({ note }: NoteCardProps) {
     return (
         <Dialog.Root>
 
@@ -20,18 +22,13 @@ export function Note({ note, tags }: NoteCardProps) {
 
                 <div className={styles.perfilDaPublicacaoDaForYou}>
                     <div className={styles.fotoDeUsuarioDaForYou}/>
-                    <div className={styles.nomeDeUsuarioDaForYou}>Usuário</div>
-                    <div className={styles.nicknameNaForYou}>@user1418047</div>
+                    <div className={styles.nomeDeUsuarioDaForYou}>{note.userName}</div>
+                    <div className={styles.nicknameNaForYou}>{note.nick}</div>
                     <p>{formatDistanceToNow (note.date, {locale: ptBR, addSuffix: true})}</p>
                 </div>
 
                 <div className={styles.conteudo}>
-                    <h1 className={styles.tituloDaMensagem}>Título da mensagem</h1>
-                    <ul className={styles.areaDasTagsDoPerfil}>
-                        {tags.map((tag, index) => (
-                        <li key={index}>{tag}</li>
-                        ))}
-                    </ul>
+                    <h1 className={styles.tituloDaMensagem}>{note.title}</h1>
                     <p className={styles.textoDaMensagem}>{note.content}</p>
                 </div>
 

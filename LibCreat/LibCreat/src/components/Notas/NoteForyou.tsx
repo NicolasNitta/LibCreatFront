@@ -7,18 +7,19 @@ import styles from '../../style.module.css';
 import { useApiContext } from '../../APIContext/PageContext';
 
 interface NoteCardProps {
+    
     note: {
+        userName: String;
+        nick: String;
         date: Date;
+        title: String;
         content: String;
     }
-    tags: string[];
 }
 
-export function NoteForYou ({ note, tags }: NoteCardProps) {
+export function NoteForYou ({ note }: NoteCardProps) {
 
     const {redirectTo} = useApiContext();
-
-    const uniqueTags = Array.from(new Set(tags));
 
     return (
         <Dialog.Root>
@@ -27,18 +28,13 @@ export function NoteForYou ({ note, tags }: NoteCardProps) {
 
                 <div className={styles.perfilDaPublicacaoDaForYou}>
                     <button onClick={() => {redirectTo("/Perfil")}} className={styles.fotoDeUsuarioDaForYou}/>
-                    <button onClick={() => {redirectTo("/Perfil")}} className={styles.nomeDeUsuarioDaForYou}>Usuário</button>
-                    <button onClick={() => {redirectTo("/Perfil")}} className={styles.nicknameNaForYou}>@user1418047</button>
-                    <p>{formatDistanceToNow (note.date, {locale: ptBR, addSuffix: true})}</p>
+                    <button onClick={() => {redirectTo("/Perfil")}} className={styles.nomeDeUsuarioDaForYou}>{note.userName}</button>
+                    <button onClick={() => {redirectTo("/Perfil")}} className={styles.nicknameNaForYou}>{note.nick}</button>
+                    <p>{JSON.stringify(note.date)}</p>
                 </div>
 
                 <div className={styles.conteudo}>
-                    <h1 className={styles.tituloDaMensagem}>Título da mensagem</h1>
-                    <ul className={styles.areaDasTagsDaForYou}>
-                        {tags.map((tag, index) => (
-                        <li key={index}>{tag}</li>
-                        ))}
-                    </ul>
+                    <h1 className={styles.tituloDaMensagem}>{note.title}</h1>
                     <p className={styles.textoDaMensagem}>{note.content}</p>
                 </div>
 

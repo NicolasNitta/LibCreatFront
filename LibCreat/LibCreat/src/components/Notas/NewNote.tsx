@@ -5,7 +5,11 @@ import { toast } from 'sonner'
 
 import styles from "../../style.module.css";
 
+import { useApiContext } from '../../APIContext/PageContext';
+
 export function NewNote() {
+
+  const {redirectTo} = useApiContext();
 
 
   const [shouldShowOnboarding, setShouldShowOnboarding] = useState(true);
@@ -32,12 +36,18 @@ export function NewNote() {
 
   return (
     <Dialog.Root>
-      <Dialog.Trigger className={styles.novaPublicacaoDoPerfil}>
 
-        Adicionar uma nova ideia...
+    <button onClick={() => redirectTo("/NovaIdeia")}>
 
-      </Dialog.Trigger>
+        <Dialog.Trigger className={styles.novaPublicacaoDoPerfil}>
+
+          Adicionar uma nova ideia...
+
+        </Dialog.Trigger>
+
+      </button>
       <Dialog.Portal>
+
         {/*
         <Dialog.Overlay className="inset-0 fixed bg-black/50">
           <Dialog.Content className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[640px] w-full h-[60vh] bg-slate-700 rounded-md flex flex-col">

@@ -5,6 +5,8 @@ import Login from "../pages/Login";
 import Singin from "../pages/Singin";
 import Notificacoes from "../pages/Notificacoes";
 
+import NovaIdeia from "../pages/NovaIdeia";
+
 function RoutesMain(){
 
     return(
@@ -18,6 +20,8 @@ function RoutesMain(){
                 <Route path="/Login" element = {<Login />}/>
                 <Route path="/Singin" element = {<Singin />}/>
                 <Route path="/Notificacoes" element = {<Notificacoes />}/>
+
+                <Route path="/NovaIdeia" element = {<NovaIdeia />}/>
 
                 <Route path="/" element ={<Singin />}/>
                 
